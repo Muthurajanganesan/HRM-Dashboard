@@ -14,7 +14,6 @@ export const Events: React.FC<Props> = ({ events, setEvents }) => {
         e.preventDefault();
         if (!formData.title || !formData.date || !formData.time) return;
 
-        // Simulating sending via email or mobile as requested
         alert(`Sending event invitations for ${formData.title} via Email/Mobile integration...`);
 
         const newEvent: Event = {

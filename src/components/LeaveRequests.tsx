@@ -14,7 +14,6 @@ export const LeaveRequests: React.FC<Props> = ({ leaves, setLeaves }) => {
         e.preventDefault();
         if (!formData.employeeName || !formData.startDate || !formData.endDate) return;
 
-        // Simulating sending via email or mobile as requested
         alert(`Sending request for ${formData.employeeName} via Email/Mobile integration...`);
 
         const newRequest: LeaveRequest = {

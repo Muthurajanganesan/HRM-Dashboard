@@ -14,7 +14,6 @@ export const Meetings: React.FC<Props> = ({ meetings, setMeetings }) => {
         e.preventDefault();
         if (!formData.title || !formData.date || !formData.time) return;
 
-        // Simulating sending via email or mobile as requested
         alert(`Sending meeting invites for ${formData.title} to participants via Email/Mobile integration...`);
 
         const newMeeting: Meeting = {

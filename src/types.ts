@@ -10,7 +10,7 @@ export interface Employee {
 export interface LeaveRequest {
     id: string;
     employeeName: string;
-    type: string; /* Sick, Casual, Earned */
+    type: string; 
     startDate: string;
     endDate: string;
     reason: string;
