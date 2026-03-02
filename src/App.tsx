@@ -7,7 +7,6 @@ import { Meetings } from './components/Meetings';
 import type { Employee, LeaveRequest, Event, Meeting } from './types';
 import './App.css';
 
-// Initial Mock Data
 const initialEmployees: Employee[] = [
   { id: '1', name: 'John Doe', role: 'Software Engineer', department: 'Engineering', email: 'john@company.com', mobile: '+1 234 567 8900' },
   { id: '2', name: 'Jane Smith', role: 'HR Manager', department: 'HR', email: 'jane@company.com', mobile: '+1 987 654 3210' },
@@ -29,7 +28,7 @@ const initialMeetings: Meeting[] = [
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const userEmail = "2k22cse099@kiot.ac.in"; // Requested email
+  const userEmail = "2k22cse099@kiot.ac.in"; 
 
   const [employees, setEmployees] = useState<Employee[]>(initialEmployees);
   const [leaves, setLeaves] = useState<LeaveRequest[]>(initialLeaves);
