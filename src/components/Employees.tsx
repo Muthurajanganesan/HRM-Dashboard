@@ -34,7 +34,7 @@ export const Employees: React.FC<Props> = ({ employees, setEmployees }) => {
                     <p className="page-subtitle">Manage your team members and their roles</p>
                 </div>
                 <button className="custom-btn btn-primary" onClick={() => setShowAdd(!showAdd)}>
-                    {document.createElement('span').innerHTML = showAdd ? '✕ Cancel' : '➕ Add Employee'}
+                    {showAdd ? '✕ Cancel' : '➕ Add Employee'}
                 </button>
             </div>
 
@@ -92,7 +92,7 @@ export const Employees: React.FC<Props> = ({ employees, setEmployees }) => {
                                 <tr key={emp.id}>
                                     <td style={{ fontWeight: 500 }}>{emp.name}</td>
                                     <td>{emp.role}</td>
-                                    <td><span className="status-badge" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}>{emp.department}</span></td>
+                                    <td><span className="status-badge" style={{ background: '#e9ecef', color: '#333', border: '1px solid #ccc' }}>{emp.department}</span></td>
                                     <td style={{ color: 'var(--text-muted)' }}>{emp.email}</td>
                                     <td style={{ color: 'var(--text-muted)' }}>{emp.mobile}</td>
                                 </tr>

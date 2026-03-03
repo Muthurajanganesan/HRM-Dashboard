@@ -48,7 +48,7 @@ export const LeaveRequests: React.FC<Props> = ({ leaves, setLeaves }) => {
                     <p className="page-subtitle">Manage employee absence and time off</p>
                 </div>
                 <button className="custom-btn btn-primary" onClick={() => setShowRequest(!showRequest)}>
-                    {document.createElement('span').innerHTML = showRequest ? '✕ Cancel' : '✉️ Request Leave'}
+                    {showRequest ? '✕ Cancel' : '✉️ Request Leave'}
                 </button>
             </div>
 

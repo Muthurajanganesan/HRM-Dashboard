@@ -38,7 +38,7 @@ export const Events: React.FC<Props> = ({ events, setEvents }) => {
                     <p className="page-subtitle">Schedule and manage company events or outings</p>
                 </div>
                 <button className="custom-btn btn-primary" onClick={() => setShowForm(!showForm)}>
-                    {document.createElement('span').innerHTML = showForm ? '✕ Cancel' : '🎪 Create Event'}
+                    {showForm ? '✕ Cancel' : '🎪 Create Event'}
                 </button>
             </div>
 

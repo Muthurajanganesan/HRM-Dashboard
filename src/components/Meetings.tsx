@@ -38,7 +38,7 @@ export const Meetings: React.FC<Props> = ({ meetings, setMeetings }) => {
                     <p className="page-subtitle">Collaborate and discuss with your team</p>
                 </div>
                 <button className="custom-btn btn-primary" onClick={() => setShowForm(!showForm)}>
-                    {document.createElement('span').innerHTML = showForm ? '✕ Cancel' : '📹 Schedule Meeting'}
+                    {showForm ? '✕ Cancel' : '📹 Schedule Meeting'}
                 </button>
             </div>
 
